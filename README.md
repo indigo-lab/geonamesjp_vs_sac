@@ -2,7 +2,7 @@
 [GeoNames.jp](http://geonames.jp/) と[都道府県・市区町村コード情報 (次世代統計利用システム)](http://statdb.nstac.go.jp/system-info/api/api-spec/) のリンクセット
 
 ## What's this?
-都道府県・市区町村コード情報 (Standard Area Code、以下 SAC) は、統計に用いる標準地域コードを RDF で提供するたデータセットです。
+都道府県・市区町村コード情報 (以下 SAC) は、統計に用いる標準地域コードを RDF で提供するデータセットです。
 GeoNames.jp と SAC を関連付けることで、
 標準地域コードを元に作成されたデータと GeoNames.jp を元に作成されたデータの相互運用性の向上が期待できます。
 
