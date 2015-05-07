@@ -1,16 +1,15 @@
-# geonamesjp_vs_wikipedia
+# geonamesjp_vs_sac
 [GeoNames.jp](http://geonames.jp/) と[都道府県・市区町村コード情報 (次世代統計利用システム)](http://statdb.nstac.go.jp/system-info/api/api-spec/) のリンクセット
 
 ## What's this?
-*都道府県・市区町村コード情報* は、統計に用いる標準地域コードを RDF で提供するたデータセットです。
+都道府県・市区町村コード情報 は、統計に用いる標準地域コードを RDF で提供するたデータセットです。
 GeoNames.jp と都道府県・市区町村コード情報を関連付けることで、
 標準地域コードを元に作成されたデータと GeoNames.jp を元に作成されたデータの相互運用性の向上が期待できます。
 
 GeoNames.jp は時間に依存しない地名だけの URI を保持するのに対し、
 標準地域コードの RDF は時系列情報を持った URI を採用しています。
 GeoNames.jp に対して標準地域コードのほうがより詳細化された意味を持つと考えられるので、
-両者の関係を [skos:narrowmatch](http://www.w3.org/2004/02/skos/core#narrowMatch) を使用して表現しています。 
-
+両者の関係を [skos:narrowMatch](http://www.w3.org/2004/02/skos/core#narrowMatch) を使用して表現しています。 
 
 ## Example
 
