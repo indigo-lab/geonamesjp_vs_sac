@@ -11,6 +11,7 @@ GeoNames.jp は時間に依存しない地名だけの URI を保持するのに
 GeoNames.jp に対して標準地域コードのほうがより詳細化された意味を持つと考えられるので、
 両者の関係を [skos:narrowMatch](http://www.w3.org/2004/02/skos/core#narrowMatch) を使用して表現しています。 
 
+
 ## Example
 
 	@prefix sac:   <http://statdb.nstac.go.jp/lod/sac/> .
