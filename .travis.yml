@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- '4.1'
+script: bash ./deploy.sh
+env:
+  global:
+  - GH_REF: github.com/indigo-lab/geonamesjp_vs_sac.git
+  - secure: gxKcxgiHzreCA2OnelpTXITvFPME+DQEXQwhbY15zuvmUATCYCwAeiNUAtgMDVJ7vY/hG7fhnxd4agJQ2wlgJzxgJ4HOhhub3VaRhdgk4MxuG04f0+B5TTbPQf1Z38GGAa8jkeSMOXb1McmaiPOazV0TaKbbVhJdtRA4Eg5JupPBX3UmDR4fR+VC+fm3mp40HSKFsjp2+EXWWgMV4FazZDubZbe+4+beGBlQIor2ZYhQLgLoQtoEgNIaYFZJCjyKkImAYN5bBVOZgZQSDAGHCb+JHPhyXpZDelfs6k60Bz6GDHJzXiJ4MeiLyWiJWR2WC1I5RkULMf2PtK2MZ318QDxABc0ClZk/JvjQ4ogfLk+ZyF7htLcbzNiJD5dqF/LG7kJUaAGuqdIBumO5jPflbidirhC1OiP0rB3thxTEwlJ8k38cGGNP/jOrPaQ5Oou+mdf02d2VVqEuBN5ieku8o+8IpVYkkMXusXfEeEZVXIsqLJAmvT7pGtgsTdtXGS51g3EPMWrkQOrM2PI/rgdfeIEFg514gbahM3iZNoC6o+hAwGsYEF9TSkcxorf0o/c9JkEEPmWK7Xud0ZcaNfzYpJN2jnr055frMw6f+6IXYarYJ7sNrOkIQWZjTVDzD//KE3E/wJaS0MftfdXFlodolePzKX1tbl9MicYotWsMAHg=

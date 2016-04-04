@@ -1,0 +1,22 @@
+{
+  "name": "geonamesjp_vs_sac",
+  "version": "2.0.0",
+  "description": "linkset generator between geonamesjp and sac",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indigo-lab/geonamesjp_vs_sac.git"
+  },
+  "author": "indigo-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indigo-lab/geonamesjp_vs_sac/issues"
+  },
+  "homepage": "https://github.com/indigo-lab/geonamesjp_vs_sac#readme",
+  "dependencies": {
+    "request": "^2.69.0"
+  }
+}
