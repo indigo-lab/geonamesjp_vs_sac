@@ -14,14 +14,35 @@ SAC は期間を持った URI を採用しています。
 GeoNames.jp に対して SAC のほうがより限定された意味を持つと考えられるので、
 両者の関係を [skos:narrowMatch](http://www.w3.org/2004/02/skos/core#narrowMatch) を使用して表現しています。
 
+2016年3月以前に公開していた
+[次世代統計利用システム](http://statdb.nstac.go.jp/system-info/api/api-spec/)
+とのリンクセットはこちらの
+[ブランチ](https://github.com/indigo-lab/geonamesjp_vs_sac/tree/2015-05-07)
+からどうぞ。
+
 ## How to
 
 	npm install
 	node main.js > geonamesjp_vs_sac.nt.txt
 
+## Example
+
+	<http://geonames.jp/resource/北海道> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01000-19700401> .
+	<http://geonames.jp/resource/北海道札幌市> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01100-19720401> .
+	<http://geonames.jp/resource/北海道札幌市> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01100-19731201> .
+	<http://geonames.jp/resource/北海道札幌市中央区> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01101-19720401> .
+	<http://geonames.jp/resource/北海道札幌市中央区> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01101-19720401> .
+	<http://geonames.jp/resource/北海道札幌市北区> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01102-19720401> .
+	<http://geonames.jp/resource/北海道札幌市北区> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01102-19720401> .
+	<http://geonames.jp/resource/北海道札幌市東区> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01103-19720401> .
+	<http://geonames.jp/resource/北海道札幌市東区> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01103-19720401> .
+	<http://geonames.jp/resource/北海道札幌市白石区> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01104-19720401> .
+	<http://geonames.jp/resource/北海道札幌市白石区> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://data.e-stat.go.jp/lod/sac/C01104-19720401> .
+	...
+
 ## Note
 
-Travis CI による自動ビルドの結果を gh-pages にホストしています。 ビルドが成功している場合は以下の URL から JSON-LD のリンクセットを取得することができます。
+Travis CI による自動ビルドの結果を gh-pages にホストしています。 ビルドが成功している場合は以下の URL から N-Triples 形式のリンクセットを取得することができます。
 
 * http://indigo-lab.github.io/geonamesjp_vs_sac/geonamesjp_vs_sac.nt.txt
 
