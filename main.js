@@ -28,6 +28,8 @@ request.get("http://data.e-stat.go.jp/lod/sparql/query", {
   });
 
   json.results.bindings.forEach(function(binding) {
+    if (binding.label.value.match(/^.*(特別区部|振興局|支庁|全国)$/))
+      return;
     var sac = binding.sac.value;
     var key = "";
     var cur = sac;
@@ -37,12 +39,11 @@ request.get("http://data.e-stat.go.jp/lod/sparql/query", {
         key = (obj.gun ? obj.gun.value : "") + obj.label.value + key;
       cur = obj.parent ? obj.parent.value : null;
     }
-    if (key.length > 0)
-      console.log([
-        "<http://geonames.jp/resource/@>".replace("@", key),
-        "<http://www.w3.org/2004/02/skos/core#narrowMatch>",
-        "<@>".replace("@", sac),
-        "."
-      ].join(" "));
+    console.log([
+      "<http://geonames.jp/resource/@>".replace("@", key),
+      "<http://www.w3.org/2004/02/skos/core#narrowMatch>",
+      "<@>".replace("@", sac),
+      "."
+    ].join(" "));
   });
 });
